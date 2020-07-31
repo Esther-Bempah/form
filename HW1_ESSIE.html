@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container {
+			width: 60%;
+			margin-top: 30px;
+			margin-left: 40px;
+			padding: 50px;
+			background-color: rgb(221, 214, 214);	
+		}
+		.content {
+			border: 10px;
+			font-size: larger;
+			font-weight: bold;
+		}
+		.fname {
+			width:100%;
+			height: 30px;
+		}
+		.lname{
+			width:100%;
+			height: 30px;
+		}
+		#count {
+		    width:100%;
+			height: 40px;    
+		}
+		.sub{
+			width:100%;
+			height: 100px; 
+		}
+		#btn{
+			background-color: green;
+			width: 150px;
+			font-size: 28px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+    <!-- Forms -->
+			<form action="process.php" target= "_blank" method="POST">
+			<div class="container">
+				<div class="content">
+					<div >
+						<label>First Name</label>
+						<br>
+						<input placeholder="Your name.." class="fname" type= "text" name="firstName">
+					</div>
+					<br>
+					<div>
+						<label>Last Name</label>
+						<br>
+						<input class="lname" placeholder="Your last name.." type="text" name="lastName">
+					</div>
+					<br>
+					<label>Country</label>
+					<br>
+					<select name="country" id="count">
+							<option value="">Australia</option>
+							<option value="">Ghana</option>
+							<option value="">Nigeria</option>
+							<option value="">South Africa</option>
+							<option value="">Togo</option>
+					</select>
+					<br><br>
+					<div>
+							<label>Subject</label>
+							<br>
+							<textarea placeholder="Write something.." class="sub" name="message"></textarea>
+					</div>
+					<br><br>
+					<div> 
+						<input id="btn" type="submit" value="Submit">
+					</div>
+				</div>
+			</div>
+			</div>
+		</form>
+</body>
+</html>
